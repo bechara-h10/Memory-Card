@@ -5,7 +5,7 @@ function Help({ helpStatus, setHelpStatus }) {
   return (
     <div className={`help-wrapper ${helpStatus ? "active" : ""}`}>
       <span onClick={() => setHelpStatus(false)}>
-        <i class="fa-solid fa-x"></i>
+        <i className="fa-solid fa-x"></i>
       </span>
       <p>A number of historical figures will pop up.</p>
       <p>
