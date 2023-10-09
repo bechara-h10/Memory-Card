@@ -1,0 +1,21 @@
+.help-wrapper {
+  position: absolute;
+  bottom: -1000px;
+  background-color: var(--textColor);
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  transition: bottom 250ms ease-in-out;
+}
+
+.help-wrapper span {
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.help-wrapper.active {
+  bottom: 10px;
+}
