@@ -1,17 +1,14 @@
 import React, { useState } from "react";
+import Message from "./Message";
 import "../styles/help.css";
 
 function Help({ helpStatus, setHelpStatus }) {
   return (
-    <div className={`help-wrapper ${helpStatus ? "active" : ""}`}>
-      <span onClick={() => setHelpStatus(false)}>
-        <i className="fa-solid fa-x"></i>
-      </span>
-      <p>A number of historical figures will pop up.</p>
-      <p>
-        Click on any one you like but don't click twice on the same character
-      </p>
-    </div>
+    <Message
+      message={"Try not to click on the same character twice. Good luck!"}
+      setMessageStatus={setHelpStatus}
+      messageStatus={helpStatus}
+    />
   );
 }
 

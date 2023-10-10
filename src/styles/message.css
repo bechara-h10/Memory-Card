@@ -1,0 +1,23 @@
+.message-wrapper {
+  min-width: 300px;
+  text-align: center;
+  position: absolute;
+  bottom: -1000px;
+  background-color: var(--textColor);
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  transition: bottom 250ms ease-in-out;
+}
+
+.message-wrapper span {
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.message-wrapper.active {
+  bottom: 10px;
+}
